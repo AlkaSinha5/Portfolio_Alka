@@ -139,8 +139,8 @@ function Home() {
           <div className="col-sm-6 py-2"><h6>Address: <span className="text-secondary">Ramnagari, Sector-4, Patna, Bihar</span></h6></div>
           {/* <div className="col-sm-6 py-2"><h6>Freelance: <span className="text-secondary">Available</span></h6></div> */}
         </div>
-        <a href className="btn btn-outline-primary mr-4">Hire Me</a>
-        <a href className="btn btn-outline-primary">Learn More</a>
+        <a href="#" className="btn btn-outline-primary mr-4">Hire Me</a>
+        <a href="#" className="btn btn-outline-primary">Learn More</a>
       </div>
     </div>
   </div>
