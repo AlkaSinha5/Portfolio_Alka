@@ -44,7 +44,7 @@ function Home() {
                 <a href="#project" class="nav-item nav-link">Project</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <a href="#" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
         </div>
     </nav>
 
@@ -94,7 +94,7 @@ function Home() {
         <h1 className="display-3 text-uppercase text-primary mb-2" style={{ WebkitTextStroke: '2px #ffffff' }}>
           Alka Sinha
         </h1>
-        <h1 className="typed-text-output d-inline font-weight-lighter"></h1>
+        
         
         <div className="container">
           <h1>
@@ -124,7 +124,7 @@ function Home() {
     </div>
     <div className="row align-items-center">
       <div className="col-lg-5 pb-4 pb-lg-0">
-        <img className="img-fluid rounded w-100" src="img/about.jpg" alt />
+        <img className="img-fluid rounded w-100" src="img/about.jpg" alt="image" />
       </div>
       <div className="col-lg-7">
         <h3 className="mb-4">Full Stack Developer</h3>
@@ -311,8 +311,20 @@ function Home() {
               <p className="card-text">{project.description}</p>
               <p className="card-text" style={{color:"#0BCEAF"}}>{project.stack}</p>
               <div className="d-flex justify-content-center">
-                <a className="btn btn-sm btn-outline-light mx-2" href={project.github} target="_blank">GitHub</a>
-                <a className="btn btn-sm btn-outline-light mx-2" href={project.liveDemo} target="_blank">Live Demo</a>
+              <a className="btn btn-sm btn-outline-light mx-2" 
+   href={project.github} 
+   target="_blank" 
+   rel="noopener noreferrer">
+   GitHub
+</a>
+
+<a className="btn btn-sm btn-outline-light mx-2" 
+   href={project.liveDemo} 
+   target="_blank" 
+   rel="noopener noreferrer">
+   Live Demo
+</a>
+
               </div>
             </div>
           </div>
@@ -341,7 +353,7 @@ function Home() {
     <div className="d-flex justify-content-center mb-4">
       <a className="btn btn-light btn-social mr-2" href="https://github.com/AlkaSinha5"><i className="fab fa-github" /></a>
       {/* <a className="btn btn-light btn-social mr-2" href="#"><i className="fab fa-twitter" /></a> */}
-      <a className="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/alkasinha5/"><i className="fab fa-linkedin-in" /></a>
+      <a className="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/alkasinha5"><i className="fab fa-linkedin-in" /></a>
       {/* <a className="btn btn-light btn-social" href="#"><i className="fab fa-instagram" /></a> */}
     </div>
    
