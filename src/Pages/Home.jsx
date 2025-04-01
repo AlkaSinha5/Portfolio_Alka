@@ -83,7 +83,7 @@ function Home() {
           border: "5px solid rgba(0, 255, 255, 0.3)"
           
         }}>
-          <img src="img/profile.jpg" alt="Profile photo of alka" className="img-fluid w-100 h-100" 
+          <img src="img/profile.jpg" alt="Profile of Alka" className="img-fluid w-100 h-100" 
                style={{ objectFit: "cover", transform: "rotate(-45deg)" }} />
         </div>
       </div>
@@ -124,7 +124,7 @@ function Home() {
     </div>
     <div className="row align-items-center">
       <div className="col-lg-5 pb-4 pb-lg-0">
-        <img  src="img/about.jpg" alt="About us team photo"className="img-fluid rounded w-100" />
+        <img  src="img/about.jpg" alt="About us team"className="img-fluid rounded w-100" />
       </div>
       <div className="col-lg-7">
         <h3 className="mb-4">Full Stack Developer</h3>
@@ -226,7 +226,7 @@ function Home() {
           stack:"Node.js, Express.js, Mongodb, Postman",
           image: "img/project1.jpg",
           github: "https://github.com/Harish7775/Inventory_management_system",
-          liveDemo: "javascript:void(0);",
+          liveDemo: "#",
         },
         {
           title: "Employee Management System",
@@ -234,11 +234,11 @@ function Home() {
           stack:"Node.js, Express.js, Mongodb, Postman",
           image: "img/project2.jpg",
           github: "https://github.com/AlkaSinha5/Employee_management",
-          liveDemo: "javascript:void(0);",
+          liveDemo: "#",
         },
         {
           title: "REC(Clone of Housing.com)",
-          description: "Built a Housing.com clone with a team, featuring property listings, search filters, user authentication, interactive maps, and role-based access for buyers, sellers, and admins. Focused on responsive design, performance, and secure transactions for a seamless experience. ",
+          description: "Built a Housing.com clone with a team, featuring property listings, search filters, user authentication, interactive maps, and role-based access for buyers, sellers, and admins. Focused on responsive design, performance, and secure transactions for a seamless experience.",
           stack:"Node.js, Express.js, Mongodb, React.js, Postman, Nodemailer",
           image: "img/project3.png",
           github: "https://github.com/ashish2341/REC_API",
@@ -261,11 +261,11 @@ function Home() {
           liveDemo: "https://main--igrf.netlify.app/",
         },
         {
-          title: "vision and growth",
+          title: "Vision and Growth",
           description: "Vision and Growth is designed for pediatric endocrine care and comprehensive eye health. Built by an expert in childhood growth disorders and juvenile diabetes, it integrates advanced research and technology.",
           stack:"WordPress",
           image: "img/project6.png",
-          github: "javascript:void(0);",
+          github: "#",
           liveDemo: "https://visiongrowth.in/",
         },
         {
@@ -281,17 +281,9 @@ function Home() {
           description: "Pearl Hospital is developed using HTML, CSS, Bootstrap, and JavaScript to ensure a responsive and user-friendly healthcare platform. It provides advanced medical services with a focus on accessibility, efficiency, and patient-centered care.",
           stack:"HTML, CSS, Javascript, Bootstrap",
           image: "img/project8.png",
-          github: "javascript:void(0);",
+          github: "#",
           liveDemo: "https://pearlhospitalpatna.com/",
         }
-        // {
-        //   title: "vision and growth",
-        //   description: "React & Node.js Dashboard",
-        //   stack:"Node.js, Express.js, Mongodb, Postman",
-        //   image: "img/project6.png",
-        //   github: "https://github.com/yourgithub/admin-dashboard",
-        //   liveDemo: "https://visiongrowth.in/",
-        // }
       ].map((project, index) => (
         <div className="col-lg-6 mb-5" key={index}>
           <div 
@@ -305,26 +297,29 @@ function Home() {
             onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.05)"}
             onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
           >
-            <img src={project.image} alt={project.title} className="card-img-top"  style={{ height: "250px", objectFit: "cover" }} />
+            <img src={project.image} alt={project.title} className="card-img-top" style={{ height: "250px", objectFit: "cover" }} />
             <div className="card-body text-center" style={{ background: "linear-gradient(135deg, #2c3e50, #27ae60)", padding: "20px" }}>
               <h5 className="card-title mb-3" style={{ fontSize: "18px", textTransform: "uppercase" }}>{project.title}</h5>
               <p className="card-text">{project.description}</p>
               <p className="card-text" style={{color:"#0BCEAF"}}>{project.stack}</p>
               <div className="d-flex justify-content-center">
-              <a className="btn btn-sm btn-outline-light mx-2" 
-   href={project.github} 
-   target="_blank" 
-   rel="noopener noreferrer">
-   GitHub
-</a>
+                {project.github !== "#" && project.github && (
+                  <a className="btn btn-sm btn-outline-light mx-2" 
+                     href={project.github} 
+                     target="_blank" 
+                     rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                )}
 
-<a className="btn btn-sm btn-outline-light mx-2" 
-   href={project.liveDemo} 
-   target="_blank" 
-   rel="noopener noreferrer">
-   Live Demo
-</a>
-
+                {project.liveDemo !== "#" && project.liveDemo && (
+                  <a className="btn btn-sm btn-outline-light mx-2" 
+                     href={project.liveDemo} 
+                     target="_blank" 
+                     rel="noopener noreferrer">
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -333,6 +328,7 @@ function Home() {
     </div>
   </div>
 </div>
+
 
 {/* Blog End */}
 
@@ -357,7 +353,7 @@ function Home() {
       {/* <a className="btn btn-light btn-social" href="javascript:void(0);"><i className="fab fa-instagram" /></a> */}
     </div>
    
-    <p className="m-0">© <a className="text-white font-weight-bold" href="javascript:void(0);">Alka Sinha</a>. All Rights Reserved. 
+    <p className="m-0">© <a className="text-white font-weight-bold" href="/">Alka Sinha</a>. All Rights Reserved. 
     </p>
   </div>
 </div>
