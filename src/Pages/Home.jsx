@@ -44,7 +44,7 @@ function Home() {
                 <a href="#project" class="nav-item nav-link">Project</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="#" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <a href="javascript:void(0);" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
         </div>
     </nav>
 
@@ -105,7 +105,7 @@ function Home() {
         {/* Buttons */}
         <div className="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
           <a href="img/Alka-Sinha.pdf" download className="btn btn-outline-light mr-5">Download CV</a>
-          <a href="#" className="btn btn-outline-light mr-5">Hire Me</a>
+          <a href="javascript:void(0);" className="btn btn-outline-light mr-5">Hire Me</a>
         </div>
       </div>
 
@@ -124,7 +124,7 @@ function Home() {
     </div>
     <div className="row align-items-center">
       <div className="col-lg-5 pb-4 pb-lg-0">
-        <img className="img-fluid rounded w-100" src="img/about.jpg" alt="image" />
+        <img className="img-fluid rounded w-100" src="img/about.jpg" alt="About us team photo" />
       </div>
       <div className="col-lg-7">
         <h3 className="mb-4">Full Stack Developer</h3>
@@ -139,8 +139,8 @@ function Home() {
           <div className="col-sm-6 py-2"><h6>Address: <span className="text-secondary">Ramnagari, Sector-4, Patna, Bihar</span></h6></div>
           {/* <div className="col-sm-6 py-2"><h6>Freelance: <span className="text-secondary">Available</span></h6></div> */}
         </div>
-        <a href="#" className="btn btn-outline-primary mr-4">Hire Me</a>
-        <a href="#" className="btn btn-outline-primary">Learn More</a>
+        <a href="javascript:void(0);" className="btn btn-outline-primary mr-4">Hire Me</a>
+        <a href="javascript:void(0);" className="btn btn-outline-primary">Learn More</a>
       </div>
     </div>
   </div>
@@ -357,7 +357,7 @@ function Home() {
       {/* <a className="btn btn-light btn-social" href="#"><i className="fab fa-instagram" /></a> */}
     </div>
    
-    <p className="m-0">© <a className="text-white font-weight-bold" href="#">Alka Sinha</a>. All Rights Reserved. 
+    <p className="m-0">© <a className="text-white font-weight-bold" href="javascript:void(0);">Alka Sinha</a>. All Rights Reserved. 
     </p>
   </div>
 </div>
