@@ -83,7 +83,7 @@ function Home() {
           border: "5px solid rgba(0, 255, 255, 0.3)"
           
         }}>
-          <img className="img-fluid w-100 h-100" src="img/profile.jpg" alt="Profile" 
+          <img className="img-fluid w-100 h-100" src="img/profile.jpg" alt="Profile photo of alka" 
                style={{ objectFit: "cover", transform: "rotate(-45deg)" }} />
         </div>
       </div>

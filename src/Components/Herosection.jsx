@@ -50,7 +50,7 @@ const HeroSection = () => {
             {/* Buttons */}
             <div className="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
               <a href="img/Alka-Sinha.pdf" download className="btn btn-outline-light mr-5">Download CV</a>
-              <a href="#" className="btn btn-outline-light mr-5">Hire Me</a>
+              <a href="javascript:void(0);" className="btn btn-outline-light mr-5">Hire Me</a>
             </div>
           </div>
         </div>
