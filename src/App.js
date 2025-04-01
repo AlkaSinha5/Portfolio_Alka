@@ -1,6 +1,5 @@
 
 import './App.css';
-import CustomScripts from './Components/CustomScripts';
 import Home from './Pages/Home';
 
 

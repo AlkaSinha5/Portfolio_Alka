@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase, FaWordpress, FaGitAlt, FaBootstrap, FaCloud, FaCode, FaProjectDiagram, FaServer, FaTools } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase, FaWordpress, FaGitAlt, FaBootstrap, FaCloud, FaCode, FaServer, FaTools } from "react-icons/fa";
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 />, gradient: "linear-gradient(135deg, #ff512f, #dd2476)" },
