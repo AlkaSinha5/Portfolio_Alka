@@ -83,7 +83,7 @@ function Home() {
           border: "5px solid rgba(0, 255, 255, 0.3)"
           
         }}>
-          <img className="img-fluid w-100 h-100" src="img/profile.jpg" alt="Profile photo of alka" 
+          <img src="img/profile.jpg" alt="Profile photo of alka" className="img-fluid w-100 h-100" 
                style={{ objectFit: "cover", transform: "rotate(-45deg)" }} />
         </div>
       </div>
@@ -124,7 +124,7 @@ function Home() {
     </div>
     <div className="row align-items-center">
       <div className="col-lg-5 pb-4 pb-lg-0">
-        <img className="img-fluid rounded w-100" src="img/about.jpg" alt="About us team photo" />
+        <img  src="img/about.jpg" alt="About us team photo"className="img-fluid rounded w-100" />
       </div>
       <div className="col-lg-7">
         <h3 className="mb-4">Full Stack Developer</h3>
@@ -226,7 +226,7 @@ function Home() {
           stack:"Node.js, Express.js, Mongodb, Postman",
           image: "img/project1.jpg",
           github: "https://github.com/Harish7775/Inventory_management_system",
-          liveDemo: "#",
+          liveDemo: "javascript:void(0);",
         },
         {
           title: "Employee Management System",
@@ -234,7 +234,7 @@ function Home() {
           stack:"Node.js, Express.js, Mongodb, Postman",
           image: "img/project2.jpg",
           github: "https://github.com/AlkaSinha5/Employee_management",
-          liveDemo: "#",
+          liveDemo: "javascript:void(0);",
         },
         {
           title: "REC(Clone of Housing.com)",
@@ -265,7 +265,7 @@ function Home() {
           description: "Vision and Growth is designed for pediatric endocrine care and comprehensive eye health. Built by an expert in childhood growth disorders and juvenile diabetes, it integrates advanced research and technology.",
           stack:"WordPress",
           image: "img/project6.png",
-          github: "#",
+          github: "javascript:void(0);",
           liveDemo: "https://visiongrowth.in/",
         },
         {
@@ -281,7 +281,7 @@ function Home() {
           description: "Pearl Hospital is developed using HTML, CSS, Bootstrap, and JavaScript to ensure a responsive and user-friendly healthcare platform. It provides advanced medical services with a focus on accessibility, efficiency, and patient-centered care.",
           stack:"HTML, CSS, Javascript, Bootstrap",
           image: "img/project8.png",
-          github: "#",
+          github: "javascript:void(0);",
           liveDemo: "https://pearlhospitalpatna.com/",
         }
         // {
@@ -305,7 +305,7 @@ function Home() {
             onMouseOver={(e) => e.currentTarget.style.transform = "scale(1.05)"}
             onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
           >
-            <img className="card-img-top" src={project.image} alt={project.title} style={{ height: "250px", objectFit: "cover" }} />
+            <img src={project.image} alt={project.title} className="card-img-top"  style={{ height: "250px", objectFit: "cover" }} />
             <div className="card-body text-center" style={{ background: "linear-gradient(135deg, #2c3e50, #27ae60)", padding: "20px" }}>
               <h5 className="card-title mb-3" style={{ fontSize: "18px", textTransform: "uppercase" }}>{project.title}</h5>
               <p className="card-text">{project.description}</p>
@@ -352,9 +352,9 @@ function Home() {
   <div className="container text-center py-5">
     <div className="d-flex justify-content-center mb-4">
       <a className="btn btn-light btn-social mr-2" href="https://github.com/AlkaSinha5"><i className="fab fa-github" /></a>
-      {/* <a className="btn btn-light btn-social mr-2" href="#"><i className="fab fa-twitter" /></a> */}
+      {/* <a className="btn btn-light btn-social mr-2" href="javascript:void(0);"><i className="fab fa-twitter" /></a> */}
       <a className="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/alkasinha5"><i className="fab fa-linkedin-in" /></a>
-      {/* <a className="btn btn-light btn-social" href="#"><i className="fab fa-instagram" /></a> */}
+      {/* <a className="btn btn-light btn-social" href="javascript:void(0);"><i className="fab fa-instagram" /></a> */}
     </div>
    
     <p className="m-0">© <a className="text-white font-weight-bold" href="javascript:void(0);">Alka Sinha</a>. All Rights Reserved. 
